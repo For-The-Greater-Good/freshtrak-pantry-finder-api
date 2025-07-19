@@ -91,7 +91,7 @@ module Api
     end
 
     def by_zip_and_distance
-      return unless @zip && @distance
+      return unless @user_location && @distance
 
       agencies = filter_agencies_by_location
       agencies_by_event = filter_agencies_by_event_location
